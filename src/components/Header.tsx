@@ -11,7 +11,7 @@ const Header = () => {
       <div className="container mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <a href="#" className="text-2xl font-bold tracking-tight bg-gradient-to-r from-neon-cyan via-neon-purple to-neon-red bg-clip-text text-transparent">
+          <a href="#" className="text-3xl font-bold tracking-tight bg-gradient-to-r from-neon-cyan via-neon-purple to-neon-red bg-clip-text text-transparent rounded-md">
             INSIGHT GROUP
           </a>
 

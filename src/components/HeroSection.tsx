@@ -12,7 +12,7 @@ const HeroSection = () => {
           >
             <div className="w-full h-full bg-dark/70 flex items-center justify-center">
               <div className="text-center">
-                <div className="mx-auto mb-6 w-[80%] md:w-[70%] lg:w-[60%] animate-float">
+                <div className="mx-auto mb-6 w-[70%] md:w-[60%] lg:w-[50%] animate-float rounded-2xl overflow-hidden">
                   <img 
                     src="/lovable-uploads/4d4aa5ce-abf3-421b-b75e-90f97188b8b0.png" 
                     alt="Insight Group Logo" 
