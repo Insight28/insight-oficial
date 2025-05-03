@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef } from "react";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
@@ -92,13 +91,13 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Social Media */}
-      <section id="community" className="section-padding bg-gradient-to-b from-dark to-black">
+      {/* Social Media - Adjusted position */}
+      <section id="community" className="section-padding pb-0 bg-gradient-to-b from-dark to-black">
         <div className="container mx-auto px-4">
           <h2 className="section-title text-white bg-gradient-to-r from-neon-cyan via-neon-purple to-neon-red bg-clip-text">
             <span className="text-stroke-gradient">Nossas Redes Sociais</span>
           </h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto mb-12">
             <SocialButton icon={<Instagram size={28} />} platform="Instagram" url="https://instagram.com" />
             <SocialButton icon={<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" /></svg>} platform="TikTok" url="https://tiktok.com" />
             <SocialButton icon={<Youtube size={28} />} platform="Youtube" url="https://youtube.com" />
@@ -108,12 +107,12 @@ const Index = () => {
       </section>
 
       {/* Contact */}
-      <section id="contact" className="section-padding bg-gradient-to-b from-black to-dark">
+      <section id="contact" className="section-padding bg-gradient-to-b from-black to-dark pt-0">
         <div className="container mx-auto px-4">
           <h2 className="section-title text-white bg-gradient-to-r from-neon-cyan via-neon-purple to-neon-red bg-clip-text">
             <span className="text-stroke-gradient">Fale Conosco</span>
           </h2>
-          <div className="max-w-xl mx-auto neon-border-red p-8 rounded-lg bg-dark/90 backdrop-blur-sm">
+          <div className="max-w-xl mx-auto neon-border-red p-8 rounded-lg bg-neon-purple/20 backdrop-blur-sm">
             <form>
               <div className="mb-5">
                 <label htmlFor="name" className="block text-lg font-medium mb-2">Nome</label>
@@ -141,7 +140,7 @@ const Index = () => {
               </div>
               <button 
                 type="submit" 
-                className="w-full px-6 py-4 bg-gradient-to-r from-neon-red to-neon-cyan text-white rounded-md shadow-lg hover:shadow-xl transition-all hover:scale-105 text-lg font-medium"
+                className="w-full px-6 py-4 bg-gradient-to-r from-neon-cyan to-neon-red text-white rounded-md shadow-lg hover:shadow-xl transition-all hover:scale-105 text-lg font-medium"
               >
                 Enviar Mensagem
               </button>
@@ -153,11 +152,11 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Footer */}
+      {/* Footer - Updated logo style */}
       <footer className="py-8 bg-black border-t border-neon-red/30">
         <div className="container mx-auto px-4">
           <div className="flex flex-col items-center">
-            <div className="mb-4 w-[150px]">
+            <div className="mb-4 w-[220px] neon-border-red rounded-xl overflow-hidden p-1">
               <img 
                 src="/lovable-uploads/4d4aa5ce-abf3-421b-b75e-90f97188b8b0.png" 
                 alt="Insight Group Logo" 
