@@ -8,9 +8,11 @@ import TestimonialCard from "@/components/TestimonialCard";
 import SocialIcon from "@/components/SocialIcon";
 import Chatbot from "@/components/Chatbot";
 import { MessageSquare, Globe, Instagram, Linkedin, Youtube } from "lucide-react";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 const Index = () => {
   const audioRef = useRef<HTMLAudioElement | null>(null);
+  const isMobile = useIsMobile();
 
   useEffect(() => {
     // Initialize background music (commented out for better user experience)
@@ -108,14 +110,14 @@ const Index = () => {
       </section>
 
       {/* Contact */}
-      <section id="contact" className="section-padding bg-gradient-to-b from-black to-dark">
-        <div className="container mx-auto px-4">
+      <section id="contact" className="section-padding bg-gradient-to-b from-black to-dark w-full">
+        <div className="container mx-auto px-4 w-full">
           <h2 className="section-title text-white bg-gradient-to-r from-neon-cyan via-neon-purple to-neon-red bg-clip-text">
             <span className="text-stroke-gradient">Fale Conosco</span>
           </h2>
-          <div className="max-w-xl mx-auto neon-border-purple p-8 rounded-lg bg-dark/90 backdrop-blur-sm">
-            <form>
-              <div className="mb-5">
+          <div className="max-w-xl mx-auto neon-border-purple p-4 sm:p-6 md:p-8 rounded-lg bg-dark/90 backdrop-blur-sm w-full">
+            <form className="w-full">
+              <div className="mb-5 w-full">
                 <label htmlFor="name" className="block text-lg font-medium mb-2">Nome</label>
                 <input 
                   type="text" 
@@ -123,7 +125,7 @@ const Index = () => {
                   className="w-full bg-secondary/30 border border-neon-red rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-neon-red text-lg"
                 />
               </div>
-              <div className="mb-5">
+              <div className="mb-5 w-full">
                 <label htmlFor="email" className="block text-lg font-medium mb-2">Email</label>
                 <input 
                   type="email" 
@@ -131,7 +133,7 @@ const Index = () => {
                   className="w-full bg-secondary/30 border border-neon-red rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-neon-red text-lg"
                 />
               </div>
-              <div className="mb-6">
+              <div className="mb-6 w-full">
                 <label htmlFor="message" className="block text-lg font-medium mb-2">Mensagem</label>
                 <textarea 
                   id="message" 
