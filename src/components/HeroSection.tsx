@@ -3,34 +3,35 @@ import React from 'react';
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen w-full flex items-center justify-center pt-16 overflow-hidden">
+    <section className="relative min-h-[80vh] w-full flex items-center justify-center pt-16 overflow-hidden">
       {/* Background image with neon border */}
       <div className="absolute inset-0 z-0">
-        <div className="w-full h-full neon-border-red p-1">
+        <div className="w-full h-full neon-border-purple p-1">
           <div 
-            className="w-full h-full bg-cover bg-center"
-            style={{
-              backgroundImage: "url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80')"
-            }}
+            className="w-full h-full bg-cover bg-center bg-gradient-to-b from-dark to-black"
           >
             <div className="w-full h-full bg-dark/70 flex items-center justify-center">
               <div className="text-center">
-                <h1 className="text-5xl md:text-7xl font-bold tracking-tighter mb-4 neon-text-red animate-pulse-neon-red">
-                  INSIGHT GROUP
-                </h1>
-                <p className="text-xl md:text-2xl text-white max-w-3xl mx-auto">
+                <div className="mx-auto mb-6 w-[300px] md:w-[400px] lg:w-[500px] animate-float">
+                  <img 
+                    src="/lovable-uploads/4d4aa5ce-abf3-421b-b75e-90f97188b8b0.png" 
+                    alt="Insight Group Logo" 
+                    className="w-full h-auto"
+                  />
+                </div>
+                <p className="text-xl md:text-2xl text-white max-w-3xl mx-auto mt-4">
                   Soluções inovadoras em tecnologia e inteligência artificial para o seu negócio
                 </p>
                 <div className="mt-8 flex flex-wrap justify-center gap-4">
                   <a 
                     href="#services" 
-                    className="px-6 py-3 bg-gradient-to-r from-neon-red to-neon-purple text-white rounded-md shadow-lg hover:shadow-xl transition-all hover:scale-105"
+                    className="px-8 py-4 bg-gradient-to-r from-neon-purple to-neon-cyan text-white text-lg rounded-md shadow-lg hover:shadow-xl transition-all hover:scale-105"
                   >
                     Nossos Serviços
                   </a>
                   <a 
                     href="#contact" 
-                    className="px-6 py-3 bg-transparent border-2 border-neon-red text-white rounded-md shadow-lg hover:shadow-xl transition-all hover:scale-105 hover:bg-neon-red/10"
+                    className="px-8 py-4 bg-transparent border-2 border-neon-purple text-white text-lg rounded-md shadow-lg hover:shadow-xl transition-all hover:scale-105 hover:bg-neon-purple/10"
                   >
                     Fale Conosco
                   </a>

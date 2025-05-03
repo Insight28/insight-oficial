@@ -40,35 +40,33 @@ const Index = () => {
       <HeroSection />
 
       {/* Services */}
-      <section id="services" className="py-20 bg-gradient-to-b from-dark to-black">
+      <section id="services" className="section-padding bg-gradient-to-b from-dark to-black">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 neon-text-red">
+          <h2 className="section-title neon-text-purple">
             Nossos Serviços
           </h2>
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             <ServiceCard 
               title="Atendimento com I.A." 
               description="Transforme seu atendimento ao cliente com nossa solução baseada em inteligência artificial. Respostas rápidas e personalizadas 24/7."
-              icon={<MessageSquare size={40} />}
-              className="md:mt-10"
+              icon={<MessageSquare size={48} />}
             />
             <ServiceCard 
               title="Criação de site com I.A." 
               description="Desenvolva sites modernos e otimizados com o poder da I.A. Design personalizado, SEO avançado e experiência do usuário superior."
-              icon={<Globe size={40} />}
-              className="md:mt-0"
+              icon={<Globe size={48} />}
             />
           </div>
         </div>
       </section>
 
       {/* Testimonials */}
-      <section id="testimonials" className="py-20 bg-gradient-to-b from-black to-dark">
+      <section id="testimonials" className="section-padding bg-gradient-to-b from-black to-dark">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 neon-text-purple">
+          <h2 className="section-title neon-text-purple">
             Depoimentos
           </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
             <TestimonialCard 
               name="Maria Silva"
               company="Tech Solutions"
@@ -95,12 +93,12 @@ const Index = () => {
       </section>
 
       {/* Social Media */}
-      <section id="community" className="py-20 bg-gradient-to-b from-dark to-black">
+      <section id="community" className="section-padding bg-gradient-to-b from-dark to-black">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 neon-text-cyan">
+          <h2 className="section-title neon-text-purple">
             Nossas Redes Sociais
           </h2>
-          <div className="flex justify-center gap-8 flex-wrap">
+          <div className="flex justify-center gap-10 flex-wrap">
             <SocialIcon platform="instagram" url="https://instagram.com" />
             <SocialIcon platform="linkedin" url="https://linkedin.com" />
             <SocialIcon platform="youtube" url="https://youtube.com" />
@@ -110,44 +108,44 @@ const Index = () => {
       </section>
 
       {/* Contact */}
-      <section id="contact" className="py-20 bg-gradient-to-b from-black to-dark">
+      <section id="contact" className="section-padding bg-gradient-to-b from-black to-dark">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 neon-text-red">
+          <h2 className="section-title neon-text-purple">
             Fale Conosco
           </h2>
-          <div className="max-w-xl mx-auto neon-border-red p-6 rounded-lg bg-dark/80 backdrop-blur-sm">
+          <div className="max-w-xl mx-auto neon-border-purple p-8 rounded-lg bg-dark/90 backdrop-blur-sm">
             <form>
-              <div className="mb-4">
-                <label htmlFor="name" className="block text-sm font-medium mb-2">Nome</label>
+              <div className="mb-5">
+                <label htmlFor="name" className="block text-lg font-medium mb-2">Nome</label>
                 <input 
                   type="text" 
                   id="name" 
-                  className="w-full bg-secondary/30 border border-secondary rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-neon-red"
+                  className="w-full bg-secondary/30 border border-secondary rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-neon-purple text-lg"
                 />
               </div>
-              <div className="mb-4">
-                <label htmlFor="email" className="block text-sm font-medium mb-2">Email</label>
+              <div className="mb-5">
+                <label htmlFor="email" className="block text-lg font-medium mb-2">Email</label>
                 <input 
                   type="email" 
                   id="email" 
-                  className="w-full bg-secondary/30 border border-secondary rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-neon-red"
+                  className="w-full bg-secondary/30 border border-secondary rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-neon-purple text-lg"
                 />
               </div>
               <div className="mb-6">
-                <label htmlFor="message" className="block text-sm font-medium mb-2">Mensagem</label>
+                <label htmlFor="message" className="block text-lg font-medium mb-2">Mensagem</label>
                 <textarea 
                   id="message" 
                   rows={4} 
-                  className="w-full bg-secondary/30 border border-secondary rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-neon-red"
+                  className="w-full bg-secondary/30 border border-secondary rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-neon-purple text-lg"
                 ></textarea>
               </div>
               <button 
                 type="submit" 
-                className="w-full px-6 py-3 bg-gradient-to-r from-neon-red to-neon-purple text-white rounded-md shadow-lg hover:shadow-xl transition-all hover:scale-105"
+                className="w-full px-6 py-4 bg-gradient-to-r from-neon-purple to-neon-cyan text-white rounded-md shadow-lg hover:shadow-xl transition-all hover:scale-105 text-lg font-medium"
               >
                 Enviar Mensagem
               </button>
-              <p className="text-sm text-center mt-4 text-gray-300">
+              <p className="text-base text-center mt-5 text-gray-300">
                 Ou converse com o <span className="text-neon-cyan">Sr. Sterling</span>, nosso assistente virtual
               </p>
             </form>
@@ -156,12 +154,16 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="py-8 bg-black border-t border-neon-red/30">
+      <footer className="py-8 bg-black border-t border-neon-purple/30">
         <div className="container mx-auto px-4">
-          <div className="text-center">
-            <a href="#" className="text-xl font-bold tracking-tight neon-text-red">
-              INSIGHT GROUP
-            </a>
+          <div className="flex flex-col items-center">
+            <div className="mb-4 w-[150px]">
+              <img 
+                src="/lovable-uploads/4d4aa5ce-abf3-421b-b75e-90f97188b8b0.png" 
+                alt="Insight Group Logo" 
+                className="w-full h-auto"
+              />
+            </div>
             <p className="mt-2 text-gray-400">© 2024 Insight Group. Todos os direitos reservados.</p>
           </div>
         </div>

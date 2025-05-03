@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -98,11 +99,11 @@
   }
 
   .submenu {
-    @apply absolute z-50 hidden group-hover:block min-w-[200px] bg-dark/95 backdrop-blur-sm p-2 rounded-md neon-border-cyan mt-2;
+    @apply absolute z-50 hidden group-hover:block min-w-[220px] bg-dark/95 backdrop-blur-sm p-3 rounded-md neon-border-cyan mt-2;
   }
   
   .nav-link {
-    @apply px-4 py-2 rounded-md relative overflow-hidden transition-all duration-300;
+    @apply px-5 py-3 rounded-md relative overflow-hidden transition-all duration-300 font-medium;
   }
 
   .nav-link::before {
@@ -118,4 +119,17 @@
   .nav-link.active {
     @apply bg-secondary;
   }
+  
+  .section-padding {
+    @apply py-16 md:py-20;
+  }
+  
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold text-center mb-10;
+  }
+  
+  .text-gradient {
+    @apply bg-gradient-to-r from-neon-purple to-neon-cyan bg-clip-text text-transparent;
+  }
 }
+
