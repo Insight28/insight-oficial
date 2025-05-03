@@ -57,8 +57,8 @@
 
   .neon-border-purple {
     @apply border-2 border-neon-purple relative;
-    box-shadow: 0 0 5px theme('colors.neon.purple'), 
-                inset 0 0 5px theme('colors.neon.purple');
+    box-shadow: 0 0 4px theme('colors.neon.purple'), 
+                inset 0 0 4px theme('colors.neon.purple');
   }
 
   .neon-border-cyan {
@@ -70,32 +70,39 @@
   .neon-text-red {
     @apply text-neon-red;
     --color: theme('colors.neon.red');
-    text-shadow: 0 0 5px #fff,
-      0 0 7px #fff,
-      0 0 15px #fff,
-      0 0 30px var(--color),
-      0 0 60px var(--color);
+    text-shadow: 0 0 4px #fff,
+      0 0 6px #fff,
+      0 0 12px #fff,
+      0 0 25px var(--color),
+      0 0 50px var(--color);
   }
 
   .neon-text-purple {
     @apply text-neon-purple;
     --color: theme('colors.neon.purple');
-    text-shadow: 0 0 7px #fff,
-      0 0 10px #fff,
-      0 0 21px #fff,
-      0 0 42px var(--color),
-      0 0 82px var(--color),
-      0 0 92px var(--color);
+    text-shadow: 0 0 6px #fff,
+      0 0 8px #fff,
+      0 0 18px #fff,
+      0 0 38px var(--color),
+      0 0 70px var(--color),
+      0 0 80px var(--color);
   }
 
   .neon-text-cyan {
     @apply text-neon-cyan;
     --color: theme('colors.neon.cyan');
-    text-shadow: 0 0 5px #fff,
-      0 0 7px #fff,
-      0 0 15px #fff,
-      0 0 30px var(--color),
-      0 0 60px var(--color);
+    text-shadow: 0 0 4px #fff,
+      0 0 6px #fff,
+      0 0 12px #fff,
+      0 0 25px var(--color),
+      0 0 50px var(--color);
+  }
+
+  .text-stroke-gradient {
+    text-shadow: -1px -1px 0 theme('colors.neon.red'),
+                 1px -1px 0 theme('colors.neon.purple'),
+                 -1px 1px 0 theme('colors.neon.cyan'),
+                 1px 1px 0 theme('colors.neon.purple');
   }
 
   .submenu {
@@ -121,11 +128,11 @@
   }
   
   .section-padding {
-    @apply py-16 md:py-20;
+    @apply py-12 md:py-16;
   }
   
   .section-title {
-    @apply text-3xl md:text-4xl font-bold text-center mb-10;
+    @apply text-3xl md:text-4xl font-bold text-center mb-8;
   }
   
   .text-gradient {
@@ -133,3 +140,15 @@
   }
 }
 
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0) translateX(0); }
+  25% { transform: translateY(-5px) translateX(2px); }
+  50% { transform: translateY(-8px) translateX(-2px); }
+  75% { transform: translateY(-3px) translateX(1px); }
+}
+
+@layer utilities {
+  .animate-float-slow {
+    animation: floatSlow 8s ease-in-out infinite;
+  }
+}

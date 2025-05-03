@@ -82,10 +82,10 @@ export default {
 				},
 				'pulse-neon': {
 					'0%, 100%': { 
-						textShadow: '0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px var(--color), 0 0 82px var(--color), 0 0 92px var(--color), 0 0 102px var(--color), 0 0 151px var(--color)'
+						textShadow: '0 0 6px #fff, 0 0 8px #fff, 0 0 18px #fff, 0 0 38px var(--color), 0 0 70px var(--color), 0 0 80px var(--color), 0 0 90px var(--color), 0 0 140px var(--color)'
 					},
 					'50%': { 
-						textShadow: '0 0 4px #fff, 0 0 7px #fff, 0 0 15px #fff, 0 0 30px var(--color), 0 0 60px var(--color), 0 0 70px var(--color), 0 0 80px var(--color), 0 0 110px var(--color)'
+						textShadow: '0 0 3px #fff, 0 0 6px #fff, 0 0 12px #fff, 0 0 25px var(--color), 0 0 50px var(--color), 0 0 60px var(--color), 0 0 70px var(--color), 0 0 100px var(--color)'
 					}
 				},
 				'float': {
@@ -100,12 +100,15 @@ export default {
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
-				'ticker': 'ticker 20s linear infinite',
-				'pulse-neon-red': 'pulse-neon 1.5s infinite',
-				'pulse-neon-purple': 'pulse-neon 1.8s infinite',
-				'pulse-neon-cyan': 'pulse-neon 2s infinite',
+				'ticker': 'ticker 30s linear infinite',
+				'pulse-neon-red': 'pulse-neon 1.8s infinite',
+				'pulse-neon-purple': 'pulse-neon 2s infinite',
+				'pulse-neon-cyan': 'pulse-neon 2.2s infinite',
 				'float': 'float 6s ease-in-out infinite',
 				'glow': 'glow 2s ease-in-out infinite'
+			},
+			scale: {
+				'102': '1.02',
 			}
 		}
 	},

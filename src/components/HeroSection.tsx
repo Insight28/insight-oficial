@@ -6,13 +6,13 @@ const HeroSection = () => {
     <section className="relative min-h-[80vh] w-full flex items-center justify-center pt-16 overflow-hidden">
       {/* Background image with neon border */}
       <div className="absolute inset-0 z-0">
-        <div className="w-full h-full neon-border-purple p-1">
+        <div className="w-full h-full neon-border-red p-1">
           <div 
             className="w-full h-full bg-cover bg-center bg-gradient-to-b from-dark to-black"
           >
             <div className="w-full h-full bg-dark/70 flex items-center justify-center">
               <div className="text-center">
-                <div className="mx-auto mb-6 w-[300px] md:w-[400px] lg:w-[500px] animate-float">
+                <div className="mx-auto mb-6 w-[85%] md:w-[75%] lg:w-[65%] animate-float">
                   <img 
                     src="/lovable-uploads/4d4aa5ce-abf3-421b-b75e-90f97188b8b0.png" 
                     alt="Insight Group Logo" 

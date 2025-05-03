@@ -7,7 +7,7 @@ import ServiceCard from "@/components/ServiceCard";
 import TestimonialCard from "@/components/TestimonialCard";
 import SocialIcon from "@/components/SocialIcon";
 import Chatbot from "@/components/Chatbot";
-import { MessageSquare, Globe } from "lucide-react";
+import { MessageSquare, Globe, Instagram, Linkedin, Youtube } from "lucide-react";
 
 const Index = () => {
   const audioRef = useRef<HTMLAudioElement | null>(null);
@@ -42,8 +42,8 @@ const Index = () => {
       {/* Services */}
       <section id="services" className="section-padding bg-gradient-to-b from-dark to-black">
         <div className="container mx-auto px-4">
-          <h2 className="section-title neon-text-purple">
-            Nossos Serviços
+          <h2 className="section-title text-white bg-gradient-to-r from-neon-cyan via-neon-purple to-neon-red bg-clip-text">
+            <span className="text-stroke-gradient">Nossos Serviços</span>
           </h2>
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             <ServiceCard 
@@ -63,8 +63,8 @@ const Index = () => {
       {/* Testimonials */}
       <section id="testimonials" className="section-padding bg-gradient-to-b from-black to-dark">
         <div className="container mx-auto px-4">
-          <h2 className="section-title neon-text-purple">
-            Depoimentos
+          <h2 className="section-title text-white bg-gradient-to-r from-neon-cyan via-neon-purple to-neon-red bg-clip-text">
+            <span className="text-stroke-gradient">Depoimentos</span>
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
             <TestimonialCard 
@@ -95,14 +95,14 @@ const Index = () => {
       {/* Social Media */}
       <section id="community" className="section-padding bg-gradient-to-b from-dark to-black">
         <div className="container mx-auto px-4">
-          <h2 className="section-title neon-text-purple">
-            Nossas Redes Sociais
+          <h2 className="section-title text-white bg-gradient-to-r from-neon-cyan via-neon-purple to-neon-red bg-clip-text">
+            <span className="text-stroke-gradient">Nossas Redes Sociais</span>
           </h2>
-          <div className="flex justify-center gap-10 flex-wrap">
-            <SocialIcon platform="instagram" url="https://instagram.com" />
-            <SocialIcon platform="linkedin" url="https://linkedin.com" />
-            <SocialIcon platform="youtube" url="https://youtube.com" />
-            <SocialIcon platform="tiktok" url="https://tiktok.com" />
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+            <SocialButton icon={<Instagram size={28} />} platform="Instagram" url="https://instagram.com" />
+            <SocialButton icon={<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" /></svg>} platform="TikTok" url="https://tiktok.com" />
+            <SocialButton icon={<Youtube size={28} />} platform="Youtube" url="https://youtube.com" />
+            <SocialButton icon={<Linkedin size={28} />} platform="LinkedIn" url="https://linkedin.com" />
           </div>
         </div>
       </section>
@@ -110,17 +110,17 @@ const Index = () => {
       {/* Contact */}
       <section id="contact" className="section-padding bg-gradient-to-b from-black to-dark">
         <div className="container mx-auto px-4">
-          <h2 className="section-title neon-text-purple">
-            Fale Conosco
+          <h2 className="section-title text-white bg-gradient-to-r from-neon-cyan via-neon-purple to-neon-red bg-clip-text">
+            <span className="text-stroke-gradient">Fale Conosco</span>
           </h2>
-          <div className="max-w-xl mx-auto neon-border-purple p-8 rounded-lg bg-dark/90 backdrop-blur-sm">
+          <div className="max-w-xl mx-auto neon-border-red p-8 rounded-lg bg-dark/90 backdrop-blur-sm">
             <form>
               <div className="mb-5">
                 <label htmlFor="name" className="block text-lg font-medium mb-2">Nome</label>
                 <input 
                   type="text" 
                   id="name" 
-                  className="w-full bg-secondary/30 border border-secondary rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-neon-purple text-lg"
+                  className="w-full bg-secondary/30 border border-neon-red rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-neon-red text-lg"
                 />
               </div>
               <div className="mb-5">
@@ -128,7 +128,7 @@ const Index = () => {
                 <input 
                   type="email" 
                   id="email" 
-                  className="w-full bg-secondary/30 border border-secondary rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-neon-purple text-lg"
+                  className="w-full bg-secondary/30 border border-neon-red rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-neon-red text-lg"
                 />
               </div>
               <div className="mb-6">
@@ -136,12 +136,12 @@ const Index = () => {
                 <textarea 
                   id="message" 
                   rows={4} 
-                  className="w-full bg-secondary/30 border border-secondary rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-neon-purple text-lg"
+                  className="w-full bg-secondary/30 border border-neon-red rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-neon-red text-lg"
                 ></textarea>
               </div>
               <button 
                 type="submit" 
-                className="w-full px-6 py-4 bg-gradient-to-r from-neon-purple to-neon-cyan text-white rounded-md shadow-lg hover:shadow-xl transition-all hover:scale-105 text-lg font-medium"
+                className="w-full px-6 py-4 bg-gradient-to-r from-neon-red to-neon-cyan text-white rounded-md shadow-lg hover:shadow-xl transition-all hover:scale-105 text-lg font-medium"
               >
                 Enviar Mensagem
               </button>
@@ -154,7 +154,7 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="py-8 bg-black border-t border-neon-purple/30">
+      <footer className="py-8 bg-black border-t border-neon-red/30">
         <div className="container mx-auto px-4">
           <div className="flex flex-col items-center">
             <div className="mb-4 w-[150px]">
@@ -172,6 +172,23 @@ const Index = () => {
       {/* Chatbot */}
       <Chatbot />
     </div>
+  );
+};
+
+// New component for social buttons
+const SocialButton = ({ icon, platform, url }: { icon: React.ReactNode, platform: string, url: string }) => {
+  return (
+    <a 
+      href={url} 
+      target="_blank" 
+      rel="noopener noreferrer"
+      className="neon-border-red flex items-center justify-center gap-3 p-3 rounded-full bg-dark/80 hover:bg-dark/50 transition-all duration-500 animate-float-slow text-white"
+    >
+      <span className="text-neon-purple">
+        {icon}
+      </span>
+      <span className="font-medium">{platform}</span>
+    </a>
   );
 };
 
