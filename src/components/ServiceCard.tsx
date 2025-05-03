@@ -12,10 +12,10 @@ interface ServiceCardProps {
 const ServiceCard = ({ title, description, icon, className }: ServiceCardProps) => {
   return (
     <div className={cn(
-      "neon-border-red p-6 rounded-lg bg-dark/80 backdrop-blur-sm hover:scale-105 transition-all duration-300",
+      "neon-border-purple p-6 rounded-lg bg-dark/80 backdrop-blur-sm hover:scale-105 transition-all duration-300",
       className
     )}>
-      <div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center text-neon-red">
+      <div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center text-neon-purple">
         {icon}
       </div>
       <h3 className="text-xl font-bold mb-3 text-center">{title}</h3>

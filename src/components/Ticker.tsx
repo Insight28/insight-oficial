@@ -11,9 +11,9 @@ const messages = [
 
 const Ticker = () => {
   return (
-    <div className="w-full overflow-hidden bg-dark/80 backdrop-blur-sm py-3 border-y border-neon-red">
+    <div className="w-full overflow-hidden bg-dark/80 backdrop-blur-sm py-3 border-y border-neon-purple">
       <div className="animate-ticker whitespace-nowrap">
-        <span className="inline-block text-xl font-medium neon-text-red animate-pulse-neon-red">
+        <span className="inline-block text-xl font-medium text-white">
           {messages.join(' • ')} &nbsp; {messages.join(' • ')}
         </span>
       </div>
