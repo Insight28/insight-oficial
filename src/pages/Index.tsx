@@ -159,11 +159,11 @@ const Index = () => {
       <footer className="py-8 bg-black border-t border-neon-red/30">
         <div className="container mx-auto px-4">
           <div className="flex flex-col items-center">
-            <div className="mb-4 w-[300px] neon-border-red rounded-2xl overflow-hidden p-1">
+            <div className="mb-4 w-[300px] overflow-hidden p-1">
               <img 
                 src="/lovable-uploads/4d4aa5ce-abf3-421b-b75e-90f97188b8b0.png" 
                 alt="Insight Group Logo" 
-                className="w-full h-auto"
+                className="w-full h-auto neon-border-red rounded-2xl"
               />
             </div>
             <p className="mt-2 text-gray-400">© 2024 Insight Group. Todos os direitos reservados.</p>

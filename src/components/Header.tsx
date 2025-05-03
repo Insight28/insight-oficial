@@ -10,8 +10,8 @@ const Header = () => {
     <header className="fixed w-full z-50 bg-dark/80 backdrop-blur-md">
       <div className="container mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
-          {/* Logo */}
-          <a href="#" className="text-3xl font-bold tracking-tight bg-gradient-to-r from-neon-cyan via-neon-purple to-neon-red bg-clip-text text-transparent rounded-md">
+          {/* Logo - removed border styling */}
+          <a href="#" className="text-3xl font-bold tracking-tight bg-gradient-to-r from-neon-cyan via-neon-purple to-neon-red bg-clip-text text-transparent">
             INSIGHT GROUP
           </a>
 
