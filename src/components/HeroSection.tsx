@@ -12,14 +12,14 @@ const HeroSection = () => {
           >
             <div className="w-full h-full bg-dark/70 flex items-center justify-center">
               <div className="text-center">
-                <div className="mx-auto mb-6 w-[70%] md:w-[60%] lg:w-[50%] animate-float rounded-2xl overflow-hidden">
+                <div className="mx-auto mb-6 w-[85%] md:w-[80%] lg:w-[75%] animate-float rounded-2xl overflow-hidden">
                   <img 
                     src="/lovable-uploads/4d4aa5ce-abf3-421b-b75e-90f97188b8b0.png" 
                     alt="Insight Group Logo" 
                     className="w-full h-auto"
                   />
                 </div>
-                <p className="text-xl md:text-2xl text-white max-w-3xl mx-auto mt-4">
+                <p className="text-2xl md:text-3xl text-white max-w-3xl mx-auto mt-4">
                   Soluções inovadoras em tecnologia e inteligência artificial para o seu negócio
                 </p>
                 <div className="mt-8 flex flex-wrap justify-center gap-4">

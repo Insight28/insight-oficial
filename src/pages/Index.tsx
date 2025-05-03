@@ -113,7 +113,7 @@ const Index = () => {
           <h2 className="section-title text-white bg-gradient-to-r from-neon-cyan via-neon-purple to-neon-red bg-clip-text">
             <span className="text-stroke-gradient">Fale Conosco</span>
           </h2>
-          <div className="max-w-xl mx-auto neon-border-red p-8 rounded-lg bg-dark/90 backdrop-blur-sm">
+          <div className="max-w-xl mx-auto neon-border-purple p-8 rounded-lg bg-dark/90 backdrop-blur-sm">
             <form>
               <div className="mb-5">
                 <label htmlFor="name" className="block text-lg font-medium mb-2">Nome</label>
