@@ -14,7 +14,7 @@ const HeroSection = () => {
               <div className="text-center">
                 <div className="mx-auto mb-6 w-[85%] md:w-[80%] lg:w-[75%] animate-float rounded-2xl overflow-hidden">
                   <img 
-                    src="/lovable-uploads/4d4aa5ce-abf3-421b-b75e-90f97188b8b0.png" 
+                    /*src="/lovable-uploads/4d4aa5ce-abf3-421b-b75e-90f97188b8b0.png"*/ 
                     alt="Insight Group Logo" 
                     className="w-full h-auto"
                   />
