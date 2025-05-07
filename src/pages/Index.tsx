@@ -103,7 +103,7 @@ const Index = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto mb-12">
             <SocialButton icon={<Instagram size={28} />} platform="Instagram" url="https://www.instagram.com/insi_ght28" />
             <SocialButton icon={<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" /></svg>} platform="TikTok" url="https://tiktok.com" />
-            <SocialButton icon={<Youtube size={28} />} platform="Youtube" url="https://studio.youtube.com/channel/UCPAcMg2a4DTG7p-JfMtAIpg/videos/upload?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%22sortOrder%22%3A%22DESCENDING%22%7D" />
+            <SocialButton icon={<Youtube size={28} />} platform="Youtube" url="https://youtube.com/@insightgroup28" />
             <SocialButton icon={<Linkedin size={28} />} platform="LinkedIn" url="https://www.linkedin.com/in/insight-group-6336a7363/" />
           </div>
         </div>
