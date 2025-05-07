@@ -12,8 +12,8 @@ const HeroSection = () => {
             className="w-full h-full bg-cover bg-center bg-gradient-to-b from-dark to-black"
           >
             <div className="w-full h-full bg-dark/70 flex items-center justify-center">
-              <div className="text-center">
-                <div className="mx-auto mb-6 w-[85%] md:w-[80%] lg:w-[75%] animate-float rounded-2xl overflow-hidden">
+              <div className="text-center w-full px-4">
+                <div className="w-full mx-auto mb-6 animate-float rounded-2xl overflow-hidden">
                   <img 
                     src={logo_oficial}
                     alt="Insight Group Logo" 
