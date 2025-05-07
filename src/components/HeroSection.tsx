@@ -1,6 +1,6 @@
 
 import React from 'react';
-import logo_oficial from './assets/logo_oficial.jpeg';
+import logo_oficial from '../assets/logo_oficial.jpeg';
 
 const HeroSection = () => {
   return (
