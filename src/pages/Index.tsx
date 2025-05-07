@@ -38,7 +38,7 @@ const Index = () => {
         <Ticker />
       </div>
       
-      {/* Hero Section */}
+      {/* Hero Section*/}
       <HeroSection />
 
       {/* Services */}
@@ -101,7 +101,7 @@ const Index = () => {
             <span className="text-stroke-gradient">Nossas Redes Sociais</span>
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto mb-12">
-            <SocialButton icon={<Instagram size={28} />} platform="Instagram" url="https://instagram.com" />
+            <SocialButton icon={<Instagram size={28} />} platform="Instagram" url="https://www.instagram.com/insi_ght28" />
             <SocialButton icon={<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" /></svg>} platform="TikTok" url="https://tiktok.com" />
             <SocialButton icon={<Youtube size={28} />} platform="Youtube" url="https://youtube.com" />
             <SocialButton icon={<Linkedin size={28} />} platform="LinkedIn" url="https://linkedin.com" />
