@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef } from "react";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
@@ -7,7 +6,7 @@ import ServiceCard from "@/components/ServiceCard";
 import TestimonialCard from "@/components/TestimonialCard";
 import SocialIcon from "@/components/SocialIcon";
 import Chatbot from "@/components/Chatbot";
-import { MessageSquare, Globe, Instagram, Linkedin, Youtube, Mail, Whatsapp } from "lucide-react";
+import { MessageSquare, Globe, Instagram, Linkedin, Youtube, Mail } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
 
 const Index = () => {
@@ -172,7 +171,10 @@ const Index = () => {
                 <span>insightgroup28@gmail.com</span>
               </div>
               <div className="flex items-center gap-2 text-gray-300">
-                <Whatsapp className="text-neon-purple" size={18} />
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-neon-purple">
+                  <path d="M17 7l-10 10" />
+                  <path d="M8 7h9v9" />
+                </svg>
                 <span>(11)91928-6674 / (11)97897-7969</span>
               </div>
               <div className="flex items-center gap-2 text-gray-300">

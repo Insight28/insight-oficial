@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { Menu } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import ContactMenu from '@/components/ContactMenu';
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -73,7 +74,9 @@ const Header = () => {
               </div>
             </NavItem>
             
-            <NavItem href="#contact" label="Contato" />
+            <ContactMenu>
+              <button className="nav-link">Contato</button>
+            </ContactMenu>
           </nav>
         </div>
 
@@ -87,7 +90,10 @@ const Header = () => {
             <a href="#services" className="px-4 py-2 rounded hover:bg-secondary/50">Serviços</a>
             <a href="#testimonials" className="px-4 py-2 rounded hover:bg-secondary/50">Depoimentos</a>
             <a href="#community" className="px-4 py-2 rounded hover:bg-secondary/50">Comunidade</a>
-            <a href="#contact" className="px-4 py-2 rounded hover:bg-secondary/50">Contato</a>
+            
+            <ContactMenu>
+              <button className="w-full text-left px-4 py-2 rounded hover:bg-secondary/50">Contato</button>
+            </ContactMenu>
           </div>
         </nav>
       </div>
