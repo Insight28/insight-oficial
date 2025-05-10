@@ -159,11 +159,6 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-col items-center">
             <div className="mb-4 w-[200px] overflow-hidden p-1">
-              <img 
-                src="/lovable-uploads/2bd1c935-a717-454d-99ea-99c0d3a65522.png" 
-                alt="Instagram QR Code" 
-                className="w-full h-auto neon-border-purple rounded-2xl"
-              />
             </div>
             <div className="flex flex-col md:flex-row items-center justify-center gap-4 my-4">
               <div className="flex items-center gap-2 text-gray-300">
@@ -176,11 +171,7 @@ const Index = () => {
                   <path d="M8 7h9v9" />
                 </svg>
                 <span>(11)91928-6674 / (11)97897-7969</span>
-              </div>
-              <div className="flex items-center gap-2 text-gray-300">
-                <Instagram className="text-neon-red" size={18} />
-                <span>Escaneie o QR code acima</span>
-              </div>
+              </div>             
             </div>
             <p className="mt-2 text-gray-400">© 2024 Insight Group. Todos os direitos reservados.</p>
           </div>
